@@ -1,38 +1,328 @@
-.App {
+body{
+  background: #F7F7F7;
+}
+*{
+  box-sizing: border-box;
+}
+/* Entete */
+/* TopBar */
+.topBar{
+  background: linear-gradient(270deg, #067AC2 0%, #209EDB 100%), #C4C4C4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  height: 2.2rem;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.topBar a{
+  color: white;
+  text-decoration: none;
+  margin: .2rem;
+}
+
+/* Main head */
+.MainHead{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  height: 5rem;
+}
+.category-toggle button{
+  background: linear-gradient(0deg, #DCE5EC, #DCE5EC), #C4C4C4;
+  height: 2.8rem;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #077BC3;
+  border: none;
+}
+/* Form search section */
+.form-search form{
+  display: flex;
+  
+}
+.form-search form input{
+  width: 462px;
+  height: 2.8rem;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #077BC3;
+  z-index: 1;
+}
+.form-search form .btn{
+  width: 5rem;
+  height: 2.8rem;
+  background: linear-gradient(180deg, #4DBCEF 0%, #077BC3 100%);
+  border-radius: 10px;
+  margin-left: -2rem;
+}
+/* commande button */
+.btn-commande button{
+  height: 2.8rem;
+  background: linear-gradient(270deg, #067AC2 0%, #209EDB 100%), #C4C4C4;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-commande button span{
+  border: 2px solid #FFFFFF;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border-radius: 100%;
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: .3rem;
+}
+.btn-commande button span:hover{
+  border-color: #067AC2;
+  color: #067AC2;
+}
+.favori{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+/* favori section */
+.favori img{
+  margin-right: .4rem;
+}
+/* .avatar section */
+.avatar img{
+  height: 2.8rem;
+}
+/* Hero section */
+.hero{
+  display: grid;
+  grid-template-columns: auto 600px;
+  grid-gap: 1rem;
+  padding: 1.2rem;
+  margin: 2.5rem;
+  background: #fff;
+}
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 28rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.categorie{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: .2rem;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+.all-categories{
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(3,1fr);
+}
+.MainContent{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-gap: 2rem;
+  margin: 0 2.5rem;
+  padding: 1rem;
+}
+.MainContent h2{
+  font-family: Roboto;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.product{
+  position: relative;
+  background: #FFFFFF;
+  filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.14));
+  border-radius: 10px;
+}
+.product .icon{
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  color: #FF0000;
+  font-size: 30px;
+  background: #f7f7f794;
+  padding: .4rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 50%;
+}
+.product img{
+  width: 100%;
+  border-radius: 10px;
+}
+.product h3{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+}
+.product h5{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin: .3rem 0;
+  color: #067AC2;
+}
+.product p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+.btn-main{
+  border: none;
   color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  padding: .5rem 1rem;
+  margin-top: .5rem;
+  width: 50%;
 }
-
-.App-link {
-  color: #61dafb;
+.all-Products{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4,1fr);
 }
+.btn-main:first-child{
+  border-radius: 0 0  0px 10px;
+}
+.btn-main:last-child{
+  border-radius: 0 0  10px 0;
+}
+.sideBar{
+  margin-top: 4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer{
+  margin-top: 4rem;
+  padding: 4rem 2.5rem 2rem 2.5rem;
+  background: white;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 1rem;
+  padding: 0 0 2rem 0;
+}
+footer h2{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  letter-spacing: -0.1px;
+  margin-bottom: 2rem;
+
+}
+footer .icon{
+  background: linear-gradient(270deg, #067AC2 0%, #209EDB 100%), #C4C4C4;
+border-radius: 6px;
+width: 40px;
+height: 40px;
+color: white;
+margin: .4rem;
+}
+footer .icons{
+  margin-top: 4rem;
+}
+footer a{
+  display: block;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* or 122% */
+padding: .4rem 0;
+letter-spacing: -0.2px;
+margin-bottom: 1rem 0;
+color: #545454;
+
+}
+footer a:hover{
+  text-decoration: underline #077BC3;
+}
+footer .iconLink{
+  color: #077BC3;
+  font-size: 30px;
+}
+footer .copyright{
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+/* or 112% */
+
+letter-spacing: -0.1px;
+
+color: #969696;
 }
