@@ -4,8 +4,8 @@ const TopBar = () => {
         <div className="topBar">
             <p>Contact</p>
             <div className="btn-connect">
-                 <a href="#">Se Connecter</a>/
-                <a href="#">S'enregistrer</a>
+                 <a href="https://makitiplus.com/">Se Connecter</a>/
+                <a href="https://makitiplus.com/">S'enregistrer</a>
             </div>
         </div>
     )

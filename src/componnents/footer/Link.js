@@ -2,7 +2,7 @@
 const Link = ({text}) => {
     return (
         <>
-            <a href="#">{text}</a>
+            <a href="https://makitiplus.com/">{text}</a>
         </>
     )
 }

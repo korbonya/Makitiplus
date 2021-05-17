@@ -10,7 +10,7 @@ const LinkIcon = ({icon, text}) => {
     ]
     return (
         <div className="link">
-            <a href="makitiplus.com"><span className="iconLink">{icons[icon]}</span> {text}</a>
+            <a href="https://makitiplus.com/"><span className="iconLink">{icons[icon]}</span> {text}</a>
         </div>
     )
 }
